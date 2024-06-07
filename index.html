@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0px;
+            
+        }
+        #main_div {
+            width: 100%;
+            background-image: url(https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEwL3YxMTcwLWdyYWRpZW50LTA5LXAucG5n.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0 auto;
+            background-image: url(https://static.vecteezy.com/system/resources/previews/001/782/780/non_2x/light-purple-pink-gradient-blur-backdrop-vector.jpg);
+            border-radius: 5px;
+        }
+
+        #logo_div {
+            width: 70%;
+        }
+
+        #logo_div img {
+            width: 20%;
+            border-radius: 5px;
+            margin-left: 150px;
+            height: 100px;
+        }
+
+        #link_div {
+            width: 80%;
+            margin: auto;
+        }
+
+        #link_div ul {
+            width: 40%;
+            display: flex;
+            justify-content: space-evenly;
+            gap: 200px;
+            list-style: none;
+        }
+
+        li {
+            font-size: 20px;
+            color: black;
+        }
+
+        li:hover {
+            cursor: pointer;
+        }
+
+        #img_div {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            margin-top: 20px;
+        }
+
+        #img img {
+            border-radius: 10px;
+
+
+        }
+
+        #text {
+            /* border: 1px solid red; */
+            width: 100%;
+            text-align: center;
+        }
+
+        #text h1 {
+            font-size: 100px;
+            color: rgb(153, 91, 211);
+            font-style: oblique;
+        }
+
+        #text h3 {
+            font-size: 47px;
+            color: rgb(74, 74, 186);
+            font-style: oblique;
+        }
+
+        #text p {
+            font-size: 20px;
+            font-weight: bolder;
+            text-align: end;
+            margin-top: 110px;
+        }
+        #form_div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background-color: rgb(125, 185, 223);
+}
+
+#form {
+    /* grid-column: 1 / 2; */
+    padding: 20px;
+    /* background-color: #f7f7f7; */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+input,select,option[value]{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    
+}
+label,button{
+    margin-left: 400px;
+    font-weight: bolder;
+}
+h2{
+    text-align: center;
+}
+button{
+    background-color: #4CAF50;
+    margin-top: 30px;
+    height: 30px;
+    width: 10%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+#table {
+    /* grid-column: 2 / 3; */
+    padding: 20px;
+    /* background-color: #f7f7f7; */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#table th, #table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+    </style>
+</head>
+
+<body>
+    <div id="main_div">
+        <nav>
+            <div id="logo_div">
+                <img src="https://og.refrens.com/img/641e8e41e2c9160011b6f10f/642a54452907310019b7f497/sitaram%20creation%20wallpaper.jpg?fq=eyJ3Ijo2MDAsImgiOjYwMCwiYnVja2V0IjoicmVmcmVucy5pbWFnZXMiLCJfX3YiOjIsImUiOiJqcGcifQ%3D%3D"
+                    alt="">
+            </div>
+            <div id="link_div">
+                <ul>
+                    <li>HOME</li>
+                    <li>ABOUT</li>
+                    <li>CONTACT</li>
+                    <li>MORE</li>
+                </ul>
+            </div>
+        </nav>
+        <div id="img_div">
+            <div id="img">
+                <img src="https://www.wework.com/ideas/wp-content/uploads/sites/4/2017/06/Web_150DPI-20190927_10th_Floor_Conference_Room_2_v1-1120x630.jpg"
+                    alt="">
+            </div>
+            <div id="text">
+                <h1>Sitaram Group of Companies</h1>
+                <h3>The Most Valuable<span style="color: rgb(224, 105, 105); font-size: smaller;">*</span> Company In
+                    The Year of 2024</h3>
+                <p>Source: The Times of India</p>
+
+            </div>
+        </div> </div>
+        <h2>Apply For Job</h2>
+
+        <div id="form_div">
+            <form id="form">
+                <label> Name:</label>
+                <input type="text" id="name" placeholder="Enter Your Name"> <br><br>
+                <label> Email:</label>
+                <input type="Email" id="email" placeholder="Enter Your Email"> <br><br>
+                <label>Number:</label>
+                <input type="text" id="number" placeholder="Enter Number"> <br><br>
+                <label> Course:</label>
+                <select id="course">
+                    <option value="Select">Select</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JAVA">JAVA</option>
+                </select><br><br>
+                <button id="btn"> Submit</button>
+            </form>
+            <div id="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Name</th> 
+                            <th>Email</th>
+                            <th>Mobile Number</th>  
+                            <th>Course</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody"></tbody>
+                </table>
+            </div>
+        </div>
+
+    
+</body>
+<script>
+    let arr=JSON.parse(localStorage.getItem("user"))||[];
+    let form=document.getElementById("form");
+    let btn=document.getElementById("btn")
+btn.addEventListener("click",getdata)
+function getdata(e) {
+    e.preventDefault();
+    let obj={
+        name:document.getElementById("name").value,
+        email:document.getElementById("email").value,
+        number:document.getElementById("number").value,
+        course:document.getElementById("course").value,
+    }
+    arr.push(obj)
+    localStorage.setItem("user",JSON.stringify(arr))
+    form.reset();
+    displaydata(arr);
+}
+function displaydata(xyz){
+    tbody.innerText="";
+    xyz.map((element,index) => {
+        index++
+        let tbody=document.getElementById("tbody")
+        let tr=document.createElement("tr")
+        let th0=document.createElement("th")
+        th0.innerText=index
+        let th=document.createElement("th")
+        th.innerText=element.name
+        let th1=document.createElement("th")
+        th1.innerText=element.email
+        let th2=document.createElement("th")
+        th2.innerText=element.number
+        let th3=document.createElement("th")
+        th3.innerText=element.course
+        tr.append(th0,th,th1,th2,th3)
+        tbody.append(tr)
+        
+        
+    });
+}
+displaydata(arr)
+
+</script>
+</html>
